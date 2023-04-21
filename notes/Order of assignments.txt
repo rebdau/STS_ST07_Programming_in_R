@@ -16,12 +16,13 @@ ORDER OF LESSONS AND EXERCISES
 9: Exercise 2
 10:Exercise 3
 
-11: Lists      
-12: lapply and sapply                    
-13: vapply and tapply
-14: Functions
+11: Lists   
+12: Lists example   
+13: lapply and sapply                    
+14: vapply and tapply
+15: Functions
 
-15:Exercise 4
+16: Exercise 4
                                             
 
           

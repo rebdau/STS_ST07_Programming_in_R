@@ -37,10 +37,12 @@ Order of lessons and exercises
 
 11: Lists
 
-12: lapply and sapply
+12: Lists example
 
-13: vapply and tapply
+13: lapply and sapply
 
-14: Functions
+14: vapply and tapply
 
-15: Exercise 4
+15: Functions
+
+16: Exercise 4
