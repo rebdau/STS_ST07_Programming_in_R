@@ -17,32 +17,36 @@ Order of lessons and exercises
 
 1: Basic Building Blocks
 
-2: Workspace Directories and Files
+2: Exercise 1
 
-3: Exercise 1
+3: Workspace Directories and Files
 
-4: Data classes
+4: Exercise 2
 
-5: Logic
+5: Data classes
 
-6: Sequences of Numbers
+6: Logic
 
-7: Subsetting Vectors
+7: Sequences of Numbers
 
-8: Matrices and Data Frames        
+8: Subsetting Vectors
 
-9: Exercise 2
+9: Matrices and Data Frames        
 
-10:Exercise 3
+10: Exercise 3
 
-11: Lists
+11:Exercise 4
 
-12: Lists example
+12: Lists
 
-13: lapply and sapply
+13: Lists example
 
-14: vapply and tapply
+14: lapply and sapply
 
-15: Functions
+15: vapply and tapply
 
-16: Exercise 4
+16: Functions
+
+17: Exercise 5
+
+18: Exercise 6

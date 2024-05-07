@@ -1,51 +1,39 @@
 ##################################################################
-#                Exercise 2: Cleaning up ufc                     #
+#              Exercise 2: Directories and Files                 #
 ##################################################################
 
-#preparation: 
-#Choose /rprogramming as your working director, so that you can have access to the ufc.csv file in "./data".
+##################################################################
+#                   Preparation (NOT IN R)                       #
+##################################################################
 
-#Load the ufc.csv dataset and call it ufc. The object ufc should be a data frame
+#Before the exercise, you need to create a directory, called, rprogramming, which contains the following subdirectories:
+#/data
+#/graphics
+#/notes
+#/scripts
 
-#In the ufc dataset, measurements for trees on different plots (=fields) are given.
-#"dbh" stands for "diameter at breast height", and is expressed in millimeter.
-#"height" is expressed in decimeter.
+#In the /data subdirectory, place all the dataset of the course
+#Using the menu bar, choose rprogramming as your working directory
 
-#Using the summary() function, look if there are strange data, and if so, change them into NA.
-#Hint: Look at the heights. If the height is less than a cm, or more than a km, it’s strange.
+##################################################################
+#                           Exercise                             #
+##################################################################
 
-#Add the variables height in meter (height.m) and diameter in cm(dbh.cm) to ufc.
-#Hint: Just assigning the new variables to ufc$height.m and ufc$dbh.cm will do the job.
+##Using the command line, set the working directory to rprogramming/scripts
 
-#Make sure that the variables that can only take a limited number of values are factors (everything except measurements!)
+##Which files are in rprogramming/data?
 
-#How many different plots are there (in ufc$plot) ?
+##Load ufc.csv from an absolute address, and name it ufc
 
-#In the ufc dataset, the species F(ir) and the FG(?) are probably intended to be GF (Grand fir).
-#Make that change in the ufc data frame.
-#Hint 1: You can use the %in% operator to select the species "F" and "FG". The output of (a %in% b) is a logical vector with length = length(a)
-#Hint 2: After the change, the levels "F" and "FG" will be empty but still existing. You will have to remove them.
+##Load Lflavum.csv from a relative address and name it Lflavum
 
-#Check out the species variable in the ufc dataframe. 
-#This factor still has all levels that it had before.
-#You need to use teh factor() function to redefine all factors,  in order to drop the now empty levels.
-#Redefine all factors in ufc and check the levels.
+##How many variables do these datasets have?
 
-#Now, how many trees do we have for each species in the ufc dataset?
-#Hint: The table() function is convenient here!
+##What are the dimensions of these datasets?
 
-#There are ten trees with blank species. 
-#There are also trees in the ufc dataset for which the dbh value is missing. 
-#Check if these correspond to the same trees. (A tree with empty species has dbh NA and vice versa)
+##Save these same datasets in the data subdirectory, under different names (ufc_ex1.csv and Lflavum_ex1.csv), and check in excel! (correct the arguments of write.csv() if necessary.)
 
-#Check also if the trees for which height is NA and trees for which dbh is NA are the same trees.
+##Create, in the graphics subdirectory a pdf named “1to10.pdf”, in which you execute the following command: >plot(1:10,1:10)
 
-#Height is difficult to measure, therefore that value is often missing.
-#But trees with missing dbh and species are actually blank lines representing empty plots.
-#You can remove these lines for which species is empty from the ufc dataframe.
-#Don't forget to remove the empty levels of the factors afterwards!
-#The best is to redefine all the factors.
-#Hint: remember the != operator (not equal)
+##Save your commands in a commented script in the scripts directory (This DOES NOT WORK on Mac!)
 
-#Save the new ufc dataset as "ufc_processed.csv" in the data subdirectory.
-#Watch out! The rownames should not be written into a new column.

@@ -1,50 +1,51 @@
-###########################################################################################
-#                Exercise 3: merging datasets of different dimensions                     #
-###########################################################################################
-
-###########################################################################################
-#                               1. Using the match() function                             #
-###########################################################################################
+##################################################################
+#                Exercise 3: Cleaning up ufc                     #
+##################################################################
 
 #preparation: 
 #Choose /rprogramming as your working director, so that you can have access to the ufc.csv file in "./data".
 
-#Load the ufc_processed.csv dataset, created in exercise 2 and saved in the data subdirectory, and call it ufc. The object ufc should be a data frame
+#Load the ufc.csv dataset and call it ufc. The object ufc should be a data frame
 
-#Create a new dataset that contains plot, tree and species variables of a subset of ufc containing only species WP. Call the new dataset ufc.wp.
+#In the ufc dataset, measurements for trees on different plots (=fields) are given.
+#"dbh" stands for "diameter at breast height", and is expressed in millimeter.
+#"height" is expressed in decimeter.
 
-#Randomize the order of the rows in ufc.wp, applying the sample() function. 
-#Hint 1: look up how the sample function works with ?sample
-#Hint 2: You need to create a "resampled" vector of the numbers 1 to (the number of rows in ufc.wp). Think about subsetting the output of the dim() function.
-#Hint 3: That resampled vector will serve a index vector for the rows in the new ufc.wp dataset
+#Using the summary() function, look if there are strange data, and if so, change them into NA.
+#Hint: Look at the heights. If the height is less than a cm, or more than a km, it’s strange.
 
-#Create a second new dataset which contains the height and dbh of the ufc dataset, also with randomized order of the rows. Call this dataset ufc.values.
+#Add the variables height in meter (height.m) and diameter in cm(dbh.cm) to ufc.
+#Hint: Just assigning the new variables to ufc$height.m and ufc$dbh.cm will do the job.
 
-#These two datasets contain the unique rownames from the ufc dataset! This will be essential for merging. You can check the row names of the datasets.
+#Make sure that the variables that can only take a limited number of values are factors (everything except measurements!)
 
-#Now merge the intersection of these two new datasets, using the match() function. Call the merged dataset mergedsets.
+#How many different plots are there (in ufc$plot) ?
 
-#I want to check if the alignment was correct! What are the rownames of each of the merged sets?
+#In the ufc dataset, the species F(ir) and the FG(?) are probably intended to be GF (Grand fir).
+#Make that change in the ufc data frame.
+#Hint 1: You can use the %in% operator to select the species "F" and "FG". The output of (a %in% b) is a logical vector with length = length(a)
+#Hint 2: After the change, the levels "F" and "FG" will be empty but still existing. You will have to remove them.
 
+#Check out the species variable in the ufc dataframe. 
+#This factor still has all levels that it had before.
+#You need to use teh factor() function to redefine all factors,  in order to drop the now empty levels.
+#Redefine all factors in ufc and check the levels.
 
-###########################################################################################
-#                               2. Using the merge() function                             #
-###########################################################################################
+#Now, how many trees do we have for each species in the ufc dataset?
+#Hint: The table() function is convenient here!
 
-#Create a data frame called params, with three variables: species, b0 and b1.
-#The values in the data frame are:
-#"WP" and "WL" for species
-#32.516 and 85.150 for b0
-#0.01181 and 0.00841 for b1
+#There are ten trees with blank species. 
+#There are also trees in the ufc dataset for which the dbh value is missing. 
+#Check if these correspond to the same trees. (A tree with empty species has dbh NA and vice versa)
 
-#Select from the ufc dataset the rows for which the species name occurs in params, and assign this selection to a new object called trees.
-#The object trees should also be a data frame.
-#Hint: the %in% operator can be used to select a subset of a bigger dataset. The output of (a %in% b) is a logical vector with length = length(a)
+#Check also if the trees for which height is NA and trees for which dbh is NA are the same trees.
 
-#After making a selection of a bigger data frame, you need to redefine the factors to drop the now empty levels (use the factor() function).
-#Redefine the factor species in trees and check the levels.
+#Height is difficult to measure, therefore that value is often missing.
+#But trees with missing dbh and species are actually blank lines representing empty plots.
+#You can remove these lines for which species is empty from the ufc dataframe.
+#Don't forget to remove the empty levels of the factors afterwards!
+#The best is to redefine all the factors.
+#Hint: remember the != operator (not equal)
 
-#The ufc and the trees data frame do not have the same dimensions but they share the same variable name "species"
-#Therefore we can simply use the merge() function to merge the new species parameters to the ufc data frame.
-#Try it  out 
-#Just type: merge(trees, params)
+#Save the new ufc dataset as "ufc_processed.csv" in the data subdirectory.
+#Watch out! The rownames should not be written into a new column.

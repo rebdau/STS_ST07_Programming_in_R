@@ -1,5 +1,9 @@
 ###########################################################################################
-#                      Exercise 4: Lists, Functions and sapply()                          #
+#                Exercise 4: merging datasets of different dimensions                     #
+###########################################################################################
+
+###########################################################################################
+#                               1. Using the match() function                             #
 ###########################################################################################
 
 #preparation: 
@@ -7,31 +11,40 @@
 
 #Load the ufc_processed.csv dataset, created in exercise 2 and saved in the data subdirectory, and call it ufc. The object ufc should be a data frame
 
-#Assignment: 
-#Create a table with the output of a all two sample t-tests, comparing all numeric (or integer) variables in the ufc dataset between Douglas Fir (DF) and Western Cedar (WC).
-#The final table must have 4 columns: "mean.DF", "mean.WC", "t.statistic", and "p.value"
-#At the end, add a logical variable (column) "significant.05" to the table, indicating if there is a difference between DF and WC at significance level 0.05, and remove the variables plot and tree, for which a t-test did not make sense.
+#Create a new dataset that contains plot, tree and species variables of a subset of ufc containing only species WP. Call the new dataset ufc.wp.
 
-#You need to use the t.test() function like this:
-#t.test(numericvariable ~ species)
-#where species is a factor with two levels ("DF", and "WC"), and numericvariable is a numeric or integer variable.
+#Randomize the order of the rows in ufc.wp, applying the sample() function. 
+#Hint 1: look up how the sample function works with ?sample
+#Hint 2: You need to create a "resampled" vector of the numbers 1 to (the number of rows in ufc.wp). Think about subsetting the output of the dim() function.
+#Hint 3: That resampled vector will serve a index vector for the rows in the new ufc.wp dataset
 
-#Follow the following approach:
-#1. Make a subset of the ufc dataset that contains only the species involved in this assignment, and make species a factor.
+#Create a second new dataset which contains the height and dbh of the ufc dataset, also with randomized order of the rows. Call this dataset ufc.values.
 
-#2. Create your own function that performs the t-test and extracts the requested values. Follow this model:
-#myfunction <- function(arguments){
-#command.1
-#command.2
-#...
-#}
+#These two datasets contain the unique rownames from the ufc dataset! This will be essential for merging. You can check the row names of the datasets.
 
-#apply your function to a single numeric variable to test the outcome, and adjust your function if necessary.
+#Now merge the intersection of these two new datasets, using the match() function. Call the merged dataset mergedsets.
 
-#3. Create a logical index vector to automatically select the numeric OR integer variables. Use sapply() to create this index vector.
-#(I know it doesn't make sense to do a t-test on variables like "plot" and "tree", but just for the sake of the exercise.)
+#I want to check if the alignment was correct! What are the rownames of each of the merged sets?
 
-#4. Using sapply() and the logical index vector created above, apply you function to all numeric or integer variables of the dataset. 
 
-#5. Check and evaluate the output: is it a table with the four columns as requested? Correct if necessary. Do the final clean-up, adding the logical column, removing rows. The t() function may be useful here.
+###########################################################################################
+#                               2. Using the merge() function                             #
+###########################################################################################
 
+#Create a data frame called params, with three variables: species, b0 and b1.
+#The values in the data frame are:
+#"WP" and "WL" for species
+#32.516 and 85.150 for b0
+#0.01181 and 0.00841 for b1
+
+#Select from the ufc dataset the rows for which the species name occurs in params, and assign this selection to a new object called trees.
+#The object trees should also be a data frame.
+#Hint: the %in% operator can be used to select a subset of a bigger dataset. The output of (a %in% b) is a logical vector with length = length(a)
+
+#After making a selection of a bigger data frame, you need to redefine the factors to drop the now empty levels (use the factor() function).
+#Redefine the factor species in trees and check the levels.
+
+#The ufc and the trees data frame do not have the same dimensions but they share the same variable name "species"
+#Therefore we can simply use the merge() function to merge the new species parameters to the ufc data frame.
+#Try it  out 
+#Just type: merge(trees, params)

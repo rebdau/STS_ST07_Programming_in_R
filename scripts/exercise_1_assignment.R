@@ -1,39 +1,20 @@
 ##################################################################
-#              Exercise 1: Directories and Files                 #
+#             Exercise 1: Calculating with vectors               #
 ##################################################################
 
-##################################################################
-#                   Preparation (NOT IN R)                       #
-##################################################################
+car	price(EUR)	consumption(L/100km)
+A	8000		18.9
+B	8700		15.7
+C	9900		12.4
+D	10500		14.1
 
-#Before the exercise, you need to create a directory, called, rprogramming, which contains the following subdirectories:
-#/data
-#/graphics
-#/notes
-#/scripts
+John rides on average 20000 km per year, and the price of the fuel is on average 1.9 EUR/L
 
-#In the /data subdirectory, place all the dataset of the course
-#Using the menu bar, choose rprogramming as your working directory
+Create an object called km, which contains the average distance driven per year by John.
+Create an object called euro.liter, which contains the price of the fuel per liter
+Create an object called price, which is a vector of length 4 containing the prices of the cars
+Create an object called consumption, which is a vector of length 4 containing the consumption of the cars in L per 100 km
 
-##################################################################
-#                           Exercise                             #
-##################################################################
-
-##Using the command line, set the working directory to rprogramming/scripts
-
-##Which files are in rprogramming/data?
-
-##Load ufc.csv from an absolute address, and name it ufc
-
-##Load Lflavum.csv from a relative address and name it Lflavum
-
-##How many variables do these datasets have?
-
-##What are the dimensions of these datasets?
-
-##Save these same datasets in the data subdirectory, under different names (ufc_ex1.csv and Lflavum_ex1.csv), and check in excel! (correct the arguments of write.csv() if necessary.)
-
-##Create, in the graphics subdirectory a pdf named “1to10.pdf”, in which you execute the following command: >plot(1:10,1:10)
-
-##Save your commands in a commented script in the scripts directory (This DOES NOT WORK on Mac!)
+In a single command, create an object called cost, which is a vector of length 4 containing the cost of each car for John, in the first year, taking into account the purchase and the fuel costs.
+Which car costs the least in the first year?
 
