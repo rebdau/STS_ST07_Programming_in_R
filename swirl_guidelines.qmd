@@ -11,7 +11,7 @@ Load the swirl package into your current R session. You will need to do this **e
 
 **Code you type in R:**
 
-```{r}
+```{r, eval=FALSE}
 library(swirl)
 ```
 
@@ -23,7 +23,7 @@ Hi! Type swirl() when you are ready to begin.
 
 **Code you type in R:**
 
-```{r}
+```{r, eval=FALSE}
 swirl()
 ```
 

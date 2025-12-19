@@ -10,7 +10,7 @@ website:
         text: Home
       - href: installation_guidelines.qmd
         text: Guidelines
-     - href: swirl_guidelines.qmd
+      - href: swirl_guidelines.qmd
         text: Guidelines
 format:
   html:
