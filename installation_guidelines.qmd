@@ -143,3 +143,19 @@ swirl()
 ```
 
 This time, **everything will work correctly**.
+
+## Step 6: Download course materials
+
+Before starting the lessons, you need to **download the course materials**.
+
+These materials include:
+
+-   The `data/` folder with datasets\
+-   The `scripts/` folder with R scripts
+
+You can download the ZIP file from GitHub here:
+
+[Download course materials](https://github.com/rebdau/STS_ST07_Programming_in_R/blob/main/materials/rprogramming.zip)
+
+> **Important:** After downloading, **do not rename or move the folders** inside the ZIP.\
+> Keep the folder structure intact so the lessons work correctly.
