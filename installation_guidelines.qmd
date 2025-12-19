@@ -1,0 +1,145 @@
+---
+title: "Installation Guidelines"
+editor: visual
+execute:
+  echo: true
+---
+
+## Step 1: Get R
+
+In order to run swirl, you must have R 3.1.0 or later installed on your computer. If you are on a Linux operating system, please visit our [Installing swirl on Linux](https://github.com/swirldev/swirl/wiki/Installing-swirl-on-Linux) page.
+
+If you need to install R, you can do so [here](http://cran.rstudio.com/).
+
+For help installing R, check out one of the following videos (courtesy of Roger Peng at Johns Hopkins Biostatistics):
+
+[Installing R on Windows](http://youtu.be/mfGFv-iB724) [Installing R on Mac](http://youtu.be/Icawuhf0Yqo)
+
+## Step 2 (optional): Get RStudio
+
+In addition to R, it’s recommended that you install RStudio, which will make your experience with R much more enjoyable.
+
+If you need to install RStudio, you can do so [here](http://www.rstudio.com/products/rstudio/download/). Select the appropriate installer for your operating system.
+
+## Step 3: Install swirl
+
+**You only need to do this once.**
+
+Open RStudio (or just plain R if you don't have RStudio) and type the following into the console:
+
+`> install.packages("swirl")`
+
+Note that the `>` symbol at the beginning of the line is R's prompt for you type something into the console. We include it here so you know that this command is to be typed into the console and not elsewhere. The part you type begins after `>`.
+
+You will see:
+
+``` text
+| Hi! Type swirl() when you are ready to begin.
+```
+
+::: warning
+If you **haven’t installed the lessons** from my GitHub page on your computer, you **aren’t ready to begin yet!**\
+**Do not type `swirl()`** until the lessons are installed.
+:::
+
+## Step 4: Install the swirl lessons (important)
+
+**You only need to do this once.**
+
+**Before starting** `swirl()`**, you must install the course lessons from my GitHub page on your computer.**
+
+Run the following command **once** in R:
+
+```{r}
+install_course_github("rebdau", "STS_ST07_swirl")
+```
+
+This command downloads the first set of lessons to your computer.
+
+You should see something like:
+
+``` text
+Downloading: 100 kB
+```
+
+## Step 5: Enter your name to swirl
+
+Once the lessons are installed, start swirl:
+
+```{r}
+swirl()
+```
+
+You will be asked to choose a name:
+
+``` text
+Welcome to swirl!
+Please sign in.
+If you've been here before, use the same name as you did then.
+If you are new, call yourself something unique.
+What shall I call you?
+```
+
+Enter your *real* lastname.firstname.
+
+For example:
+
+``` text
+dupont.jeanpaul
+zidane.zinedine
+demedicis.catherine
+halliday.johnny
+...
+```
+
+::: tip
+**Important:** Write down the name you entered so you can remember it.\
+It is **essential** that you use the **same name** every time you do `swirl()` lessons throughout the course.
+:::
+
+::: tip
+You are now ready to begin the course (go to [swirl_guidelines](swirl_guidelines.qmd)).
+:::
+
+## ⚠️ Common mistake (what *not* to do)
+
+If you run `swirl()` **before installing the lessons**, you will see a message like this:
+
+``` text
+To begin, you must install a course.  
+I can install a course for you from the internet, or I can send you to a web page  
+[https://github.com/swirldev/swirl_courses](https://github.com/swirldev/swirl_courses)  
+which will provide course options and directions for installing courses yourself.  
+```
+
+You will then be asked to choose an option:
+
+``` text
+1: R Programming
+2: Regression Models
+3: Statistical Inference
+4: Exploratory Data Analysis
+5: Don't install anything for me. I'll do it myself.
+```
+
+**Select option 5 (do not install anything).**
+
+Swirl will then exit.
+
+## Do it correctly:
+
+After exiting `swirl()`:
+
+**1. Install the lessons:**
+
+``` r
+install_course_github("rebdau", "STS_ST07_swirl")
+```
+
+**2. Start swirl again:**
+
+``` r
+swirl()
+```
+
+This time, **everything will work correctly**.

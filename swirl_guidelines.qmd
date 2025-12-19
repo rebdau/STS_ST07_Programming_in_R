@@ -1,0 +1,113 @@
+---
+title: "Swirl Guidelines"
+editor: visual
+author: "rebdau"
+editor: visual
+---
+
+## 1. Start swirl
+
+Load the swirl package into your current R session. You will need to do this **every time** you start R or want to continue an old lesson or start a new lesson.
+
+**Code you type in R:**
+
+```{r}
+library(swirl)
+```
+
+**Output you will see in the console:**
+
+``` text
+Hi! Type swirl() when you are ready to begin.
+```
+
+**Code you type in R:**
+
+```{r}
+swirl()
+```
+
+**Output you will see in the console:**
+
+``` text
+Welcome to swirl! Please sign in.
+If you've been here before, use the same name as you did then.
+If you are new, call yourself something unique.
+What shall I call you? 
+```
+
+## 2. Enter your name
+
+This name will allow the instructor to **identify you** when you have completed the lesson.
+
+## 3. Choose a course
+
+``` text
+What shall I call you? manfroid.gerard 
+| Please choose a course, or type 0 to exit swirl. 
+1: STS ST07 swirl 
+2: Take me to the swirl course repository!
+Selection: 1 
+```
+
+We will be working through the lessons in the **‘STS_ST07’** course.\
+Type `1` to select this course.
+
+## 4. Choose a lesson
+
+| Please choose a lesson, or type 0 to return to course menu.
+
+``` text
+Please choose a lesson, or type 0 to return to course menu.
+1: Basic Building Blocks
+2: Workspace Directories and Files
+3: Data classes
+4: Logic
+5: Sequences of Numbers
+6: Subsetting Vectors
+7: Matrices and Data Frames
+8: Lists
+9: Lists example
+10: lapply and sapply
+11: vapply and tapply
+12: Functions
+13: Simulation
+```
+
+Choose the first lesson: **Basic Building Blocks**\
+Type `1` to select this lesson.
+
+## 5. Do the lesson
+
+``` text
+Attempting to load lesson dependencies...
+Package ‘base64enc’ loaded correctly!
+0%
+In this lesson, we will explore some basic building blocks of the R programming language...
+```
+
+The screen also shows you your progress through the lesson (0%).
+
+## 6. Submitting your lesson
+
+You will need to be **connected to the internet** to submit your lesson.
+
+When you are done, the last question will ask if you want to **submit your answers** to me to verify that you completed the lesson.
+
+-   Enter the number of your response (usually `1`).\
+-   This will open a **new web page**, a Google form.\
+-   Scroll down and click **Submit**.
+
+This will send an **encrypted response** to the Google form so that I can verify you completed the lesson.
+
+Hit **Enter** to advance when presented with `…`.\
+
+## Some useful commands for swirl
+
+| Command  | Description                                                  |
+|----------|--------------------------------------------------------------|
+| `bye()`  | Exit swirl                                                   |
+| `play()` | Leave swirl temporarily and gain access to the console again |
+| `nxt()`  | Return to swirl after playing                                |
+| `main()` | Return to the main menu                                      |
+| `info()` | Display a list of these special commands                     |

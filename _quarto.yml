@@ -8,9 +8,10 @@ website:
     left:
       - href: index.qmd
         text: Home
-      - href: guidelines.qmd
+      - href: installation_guidelines.qmd
         text: Guidelines
-
+     - href: swirl_guidelines.qmd
+        text: Guidelines
 format:
   html:
     theme: cosmo
