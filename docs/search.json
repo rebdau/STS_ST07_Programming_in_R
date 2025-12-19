@@ -1,0 +1,142 @@
+[
+  {
+    "objectID": "swirl_guidelines.html",
+    "href": "swirl_guidelines.html",
+    "title": "Swirl Guidelines",
+    "section": "",
+    "text": "Load the swirl package into your current R session. You will need to do this every time you start R or want to continue an old lesson or start a new lesson.\nCode you type in R:\n\nlibrary(swirl)\n\nOutput you will see in the console:\nHi! Type swirl() when you are ready to begin.\nCode you type in R:\n\nswirl()\n\nOutput you will see in the console:\nWelcome to swirl! Please sign in.\nIf you've been here before, use the same name as you did then.\nIf you are new, call yourself something unique.\nWhat shall I call you?"
+  },
+  {
+    "objectID": "swirl_guidelines.html#start-swirl",
+    "href": "swirl_guidelines.html#start-swirl",
+    "title": "Swirl Guidelines",
+    "section": "",
+    "text": "Load the swirl package into your current R session. You will need to do this every time you start R or want to continue an old lesson or start a new lesson.\nCode you type in R:\n\nlibrary(swirl)\n\nOutput you will see in the console:\nHi! Type swirl() when you are ready to begin.\nCode you type in R:\n\nswirl()\n\nOutput you will see in the console:\nWelcome to swirl! Please sign in.\nIf you've been here before, use the same name as you did then.\nIf you are new, call yourself something unique.\nWhat shall I call you?"
+  },
+  {
+    "objectID": "swirl_guidelines.html#enter-your-name",
+    "href": "swirl_guidelines.html#enter-your-name",
+    "title": "Swirl Guidelines",
+    "section": "2. Enter your name",
+    "text": "2. Enter your name\nThis name will allow the instructor to identify you when you have completed the lesson."
+  },
+  {
+    "objectID": "swirl_guidelines.html#choose-a-course",
+    "href": "swirl_guidelines.html#choose-a-course",
+    "title": "Swirl Guidelines",
+    "section": "3. Choose a course",
+    "text": "3. Choose a course\nWhat shall I call you? manfroid.gerard \n| Please choose a course, or type 0 to exit swirl. \n1: STS ST07 swirl \n2: Take me to the swirl course repository!\nSelection: 1 \nWe will be working through the lessons in the ‘STS_ST07’ course.\nType 1 to select this course."
+  },
+  {
+    "objectID": "swirl_guidelines.html#choose-a-lesson",
+    "href": "swirl_guidelines.html#choose-a-lesson",
+    "title": "Swirl Guidelines",
+    "section": "4. Choose a lesson",
+    "text": "4. Choose a lesson\nPlease choose a lesson, or type 0 to return to course menu.\nPlease choose a lesson, or type 0 to return to course menu.\n1: Basic Building Blocks\n2: Workspace Directories and Files\n3: Data classes\n4: Logic\n5: Sequences of Numbers\n6: Subsetting Vectors\n7: Matrices and Data Frames\n8: Lists\n9: Lists example\n10: lapply and sapply\n11: vapply and tapply\n12: Functions\n13: Simulation\nChoose the first lesson: Basic Building Blocks\nType 1 to select this lesson."
+  },
+  {
+    "objectID": "swirl_guidelines.html#do-the-lesson",
+    "href": "swirl_guidelines.html#do-the-lesson",
+    "title": "Swirl Guidelines",
+    "section": "5. Do the lesson",
+    "text": "5. Do the lesson\nAttempting to load lesson dependencies...\nPackage ‘base64enc’ loaded correctly!\n0%\nIn this lesson, we will explore some basic building blocks of the R programming language...\nThe screen also shows you your progress through the lesson (0%)."
+  },
+  {
+    "objectID": "swirl_guidelines.html#submitting-your-lesson",
+    "href": "swirl_guidelines.html#submitting-your-lesson",
+    "title": "Swirl Guidelines",
+    "section": "6. Submitting your lesson",
+    "text": "6. Submitting your lesson\nYou will need to be connected to the internet to submit your lesson.\nWhen you are done, the last question will ask if you want to submit your answers to me to verify that you completed the lesson.\n\nEnter the number of your response (usually 1).\n\nThis will open a new web page, a Google form.\n\nScroll down and click Submit.\n\nThis will send an encrypted response to the Google form so that I can verify you completed the lesson.\nHit Enter to advance when presented with …."
+  },
+  {
+    "objectID": "swirl_guidelines.html#some-useful-commands-for-swirl",
+    "href": "swirl_guidelines.html#some-useful-commands-for-swirl",
+    "title": "Swirl Guidelines",
+    "section": "Some useful commands for swirl",
+    "text": "Some useful commands for swirl\n\n\n\n\n\n\n\nCommand\nDescription\n\n\n\n\nbye()\nExit swirl\n\n\nplay()\nLeave swirl temporarily and gain access to the console again\n\n\nnxt()\nReturn to swirl after playing\n\n\nmain()\nReturn to the main menu\n\n\ninfo()\nDisplay a list of these special commands"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Course Home",
+    "section": "",
+    "text": "Welcome to the course website for “Programmation en R” (STS_ST07_Programming_in R).\nPlease read the course guidelines.\nThe best environment to learn the R programming language, is R. Therefore, this course is organized as an R programming workshop. From the first session on, we will engage in executing specific tasks in R, while learning new parts of the R programming language every week. We will use a program called swirl to provide immediate assessment and helpful feedback in R as you work through the lessons.\nEach session will alternate between:\n\nA few swirl lessons of 15–20 minutes\n\nA summary of the most important newly acquired aspects, including some extra information and best-practice guidelines\n\nAn assignment that repeats much of the lesson material, but with new data and without the feedback from swirl\n\nPlease, make sure that you have, before the the start of our first session, R installed on your computer.\nYou will find some guidelines for the installation of R here. You can work directly in the R console or in RStudio. But in order to run swirl, you must have R 3.1.0 or later installed."
+  },
+  {
+    "objectID": "index.html#sts_st07_programming_in-r",
+    "href": "index.html#sts_st07_programming_in-r",
+    "title": "Course Home",
+    "section": "",
+    "text": "Welcome to the course website for “Programmation en R” (STS_ST07_Programming_in R).\nPlease read the course guidelines.\nThe best environment to learn the R programming language, is R. Therefore, this course is organized as an R programming workshop. From the first session on, we will engage in executing specific tasks in R, while learning new parts of the R programming language every week. We will use a program called swirl to provide immediate assessment and helpful feedback in R as you work through the lessons.\nEach session will alternate between:\n\nA few swirl lessons of 15–20 minutes\n\nA summary of the most important newly acquired aspects, including some extra information and best-practice guidelines\n\nAn assignment that repeats much of the lesson material, but with new data and without the feedback from swirl\n\nPlease, make sure that you have, before the the start of our first session, R installed on your computer.\nYou will find some guidelines for the installation of R here. You can work directly in the R console or in RStudio. But in order to run swirl, you must have R 3.1.0 or later installed."
+  },
+  {
+    "objectID": "index.html#requirements-for-edsts-credit-validation",
+    "href": "index.html#requirements-for-edsts-credit-validation",
+    "title": "Course Home",
+    "section": "Requirements for EDSTS Credit Validation",
+    "text": "Requirements for EDSTS Credit Validation\nTo earn credit for this course, you must meet all of the following requirements:\n\nAttend all sessions on Zoom\n\nYou must be logged into the Zoom meeting for the entire duration of each session (unless you have a valid justification).\nYou must sign in using your real name, with your full last name spelled out.\nIf you are unable to attend a session, you must provide a justification to both the instructor and the doctoral school.\n\nComplete all required swirl lessons\n\nAll swirl lessons listed below must be completed by Friday, January 31 at 6:00 PM."
+  },
+  {
+    "objectID": "index.html#the-order-of-the-swirl-lessons-and-assignments-to-be-completed-is-the-following",
+    "href": "index.html#the-order-of-the-swirl-lessons-and-assignments-to-be-completed-is-the-following",
+    "title": "Course Home",
+    "section": "The order of the swirl lessons and assignments to be completed is the following",
+    "text": "The order of the swirl lessons and assignments to be completed is the following\n\nBasic Building Blocks\n\nWorkspace, Directories, and Files\n\nExercise 1\n\nData Classes\n\nLogic\n\nSequences of Numbers\n\nSubsetting Vectors\n\nMatrices and Data Frames\n\nExercise 2\n\nExercise 3\n\nLists\n\nLists: Examples\n\nlapply() and sapply()\n\nvapply() and tapply()\n\nFunctions\n\nExercise 4\n\nExtra exercises can be provided on demand."
+  },
+  {
+    "objectID": "installation_guidelines.html",
+    "href": "installation_guidelines.html",
+    "title": "Installation Guidelines",
+    "section": "",
+    "text": "In order to run swirl, you must have R 3.1.0 or later installed on your computer. If you are on a Linux operating system, please visit our Installing swirl on Linux page.\nIf you need to install R, you can do so here.\nFor help installing R, check out one of the following videos (courtesy of Roger Peng at Johns Hopkins Biostatistics):\nInstalling R on Windows Installing R on Mac"
+  },
+  {
+    "objectID": "installation_guidelines.html#step-1-get-r",
+    "href": "installation_guidelines.html#step-1-get-r",
+    "title": "Installation Guidelines",
+    "section": "",
+    "text": "In order to run swirl, you must have R 3.1.0 or later installed on your computer. If you are on a Linux operating system, please visit our Installing swirl on Linux page.\nIf you need to install R, you can do so here.\nFor help installing R, check out one of the following videos (courtesy of Roger Peng at Johns Hopkins Biostatistics):\nInstalling R on Windows Installing R on Mac"
+  },
+  {
+    "objectID": "installation_guidelines.html#step-2-optional-get-rstudio",
+    "href": "installation_guidelines.html#step-2-optional-get-rstudio",
+    "title": "Installation Guidelines",
+    "section": "Step 2 (optional): Get RStudio",
+    "text": "Step 2 (optional): Get RStudio\nIn addition to R, it’s recommended that you install RStudio, which will make your experience with R much more enjoyable.\nIf you need to install RStudio, you can do so here. Select the appropriate installer for your operating system."
+  },
+  {
+    "objectID": "installation_guidelines.html#step-3-install-swirl",
+    "href": "installation_guidelines.html#step-3-install-swirl",
+    "title": "Installation Guidelines",
+    "section": "Step 3: Install swirl",
+    "text": "Step 3: Install swirl\nYou only need to do this once.\nOpen RStudio (or just plain R if you don’t have RStudio) and type the following into the console:\n&gt; install.packages(\"swirl\")\nNote that the &gt; symbol at the beginning of the line is R’s prompt for you type something into the console. We include it here so you know that this command is to be typed into the console and not elsewhere. The part you type begins after &gt;.\nYou will see:\n| Hi! Type swirl() when you are ready to begin.\n\nIf you haven’t installed the lessons from my GitHub page on your computer, you aren’t ready to begin yet!\nDo not type swirl() until the lessons are installed."
+  },
+  {
+    "objectID": "installation_guidelines.html#step-4-install-the-swirl-lessons-important",
+    "href": "installation_guidelines.html#step-4-install-the-swirl-lessons-important",
+    "title": "Installation Guidelines",
+    "section": "Step 4: Install the swirl lessons (important)",
+    "text": "Step 4: Install the swirl lessons (important)\nYou only need to do this once.\nBefore starting swirl(), you must install the course lessons from my GitHub page on your computer.\nRun the following command once in R:\n\nswirl::install_course_github(\"rebdau\", \"STS_ST07_swirl\")\n\nThis command downloads the first set of lessons to your computer.\nYou should see something like:\nDownloading: 100 kB"
+  },
+  {
+    "objectID": "installation_guidelines.html#step-5-enter-your-name-to-swirl",
+    "href": "installation_guidelines.html#step-5-enter-your-name-to-swirl",
+    "title": "Installation Guidelines",
+    "section": "Step 5: Enter your name to swirl",
+    "text": "Step 5: Enter your name to swirl\nOnce the lessons are installed, start swirl:\n\nswirl()\n\nYou will be asked to choose a name:\nWelcome to swirl!\nPlease sign in.\nIf you've been here before, use the same name as you did then.\nIf you are new, call yourself something unique.\nWhat shall I call you?\nEnter your real lastname.firstname.\nFor example:\ndupont.jeanpaul\nzidane.zinedine\ndemedicis.catherine\nhalliday.johnny\n...\n\nImportant: Write down the name you entered so you can remember it.\nIt is essential that you use the same name every time you do swirl() lessons throughout the course.\n\n\nYou are now ready to begin the course (go to swirl_guidelines)."
+  },
+  {
+    "objectID": "installation_guidelines.html#common-mistake-what-not-to-do",
+    "href": "installation_guidelines.html#common-mistake-what-not-to-do",
+    "title": "Installation Guidelines",
+    "section": "⚠️ Common mistake (what not to do)",
+    "text": "⚠️ Common mistake (what not to do)\nIf you run swirl() before installing the lessons, you will see a message like this:\nTo begin, you must install a course.  \nI can install a course for you from the internet, or I can send you to a web page  \n[https://github.com/swirldev/swirl_courses](https://github.com/swirldev/swirl_courses)  \nwhich will provide course options and directions for installing courses yourself.  \nYou will then be asked to choose an option:\n1: R Programming\n2: Regression Models\n3: Statistical Inference\n4: Exploratory Data Analysis\n5: Don't install anything for me. I'll do it myself.\nSelect option 5 (do not install anything).\nSwirl will then exit."
+  },
+  {
+    "objectID": "installation_guidelines.html#do-it-correctly",
+    "href": "installation_guidelines.html#do-it-correctly",
+    "title": "Installation Guidelines",
+    "section": "Do it correctly:",
+    "text": "Do it correctly:\nAfter exiting swirl():\n1. Install the lessons:\ninstall_course_github(\"rebdau\", \"STS_ST07_swirl\")\n2. Start swirl again:\nswirl()\nThis time, everything will work correctly."
+  }
+]

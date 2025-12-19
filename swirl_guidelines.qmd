@@ -2,7 +2,6 @@
 title: "Swirl Guidelines"
 editor: visual
 author: "rebdau"
-editor: visual
 ---
 
 ## 1. Start swirl

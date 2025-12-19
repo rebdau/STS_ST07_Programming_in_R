@@ -3,16 +3,12 @@ project:
   output-dir: docs
 
 website:
-  title: "EDSTS course – Programming in R"
+  title: "STS ST07 Programming in R"
   navbar:
-    left:
-      - href: index.qmd
-        text: Home
-      - href: installation_guidelines.qmd
-        text: Guidelines
-      - href: swirl_guidelines.qmd
-        text: Guidelines
-format:
-  html:
-    theme: cosmo
-    toc: true
+    right:
+      - text: "Home"
+        href: index.qmd
+      - text: "Installation Guidelines"
+        href: installation_guidelines.qmd
+      - text: "Swirl Guidelines"
+        href: swirl_guidelines.qmd
