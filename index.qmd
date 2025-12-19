@@ -10,7 +10,7 @@ Welcome to the course website for "Programmation en R" (STS_ST07_Programming_in 
 
 Please read the [course guidelines](guidelines.qmd).
 
-The best environment to learn the R programming language, is R. Therefore, this course is organized as an **R programming workshop**. from the first session on, we will engage in executing specific tasks in R, while learning new parts of the R programming language every week. We will use a program called `swirl` to provide immediate assessment and helpful feedback in R as you work through the lessons.
+The best environment to learn the R programming language, is R. Therefore, this course is organized as an **R programming workshop**. From the first session on, we will engage in executing specific tasks in R, while learning new parts of the R programming language every week. We will use a program called `swirl` to provide immediate assessment and helpful feedback in R as you work through the lessons.
 
 Each session will alternate between (1) a few swirl lessons of 15-20 min (2) a summary of the most important newly acquired aspects, some extra information, and best practice guidelines (3) an assignment that will repeat much of the material of the lesson, but with new data and without the feedback from `swirl`.
 
