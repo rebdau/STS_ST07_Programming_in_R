@@ -1,0 +1,17 @@
+project:
+  type: website
+  output-dir: docs
+
+website:
+  title: "EDSTS course – Programming in R"
+  navbar:
+    left:
+      - href: index.qmd
+        text: Home
+      - href: guidelines.qmd
+        text: Guidelines
+
+format:
+  html:
+    theme: cosmo
+    toc: true
