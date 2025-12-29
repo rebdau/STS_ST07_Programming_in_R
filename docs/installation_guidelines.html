@@ -185,6 +185,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <p>Open RStudio (or just plain R if you don’t have RStudio) and type the following into the console:</p>
 <p><code>&gt; install.packages("swirl")</code></p>
 <p>Note that the <code>&gt;</code> symbol at the beginning of the line is R’s prompt for you type something into the console. We include it here so you know that this command is to be typed into the console and not elsewhere. The part you type begins after <code>&gt;</code>.</p>
+<p>After installing, load the <code>swirl</code> package by typing:</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(swirl)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p>You will see:</p>
 <pre class="text"><code>| Hi! Type swirl() when you are ready to begin.</code></pre>
 <div class="warning">
@@ -198,7 +200,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <p><strong>Before starting</strong> <code>swirl()</code><strong>, you must install the course lessons from my GitHub page on your computer.</strong></p>
 <p>Run the following command <strong>once</strong> in R:</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>swirl<span class="sc">::</span><span class="fu">install_course_github</span>(<span class="st">"rebdau"</span>, <span class="st">"STS_ST07_swirl"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>swirl<span class="sc">::</span><span class="fu">install_course_github</span>(<span class="st">"rebdau"</span>, <span class="st">"STS_ST07_swirl"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <p>This command downloads the first set of lessons to your computer.</p>
 <p>You should see something like:</p>
@@ -208,7 +210,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <h2 class="anchored" data-anchor-id="step-5-enter-your-name-to-swirl">Step 5: Enter your name to swirl</h2>
 <p>Once the lessons are installed, start swirl:</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="fu">swirl</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="fu">swirl</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <p>You will be asked to choose a name:</p>
 <pre class="text"><code>Welcome to swirl!
@@ -218,9 +220,9 @@ If you are new, call yourself something unique.
 What shall I call you?</code></pre>
 <p>Enter your <em>real</em> lastname.firstname.</p>
 <p>For example:</p>
-<pre class="text"><code>dupont.jeanpaul
-zidane.zinedine
-demedicis.catherine
+<pre class="text"><code>mbappe.kylian
+dupont.jeanjacques
+bardot.brigitte
 halliday.johnny
 ...</code></pre>
 <div class="tip">
@@ -251,9 +253,9 @@ which will provide course options and directions for installing courses yourself
 <h2 class="anchored" data-anchor-id="do-it-correctly">Do it correctly:</h2>
 <p>After exiting <code>swirl()</code>:</p>
 <p><strong>1. Install the lessons:</strong></p>
-<div class="sourceCode" id="cb9"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="fu">install_course_github</span>(<span class="st">"rebdau"</span>, <span class="st">"STS_ST07_swirl"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb10"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="fu">install_course_github</span>(<span class="st">"rebdau"</span>, <span class="st">"STS_ST07_swirl"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p><strong>2. Start swirl again:</strong></p>
-<div class="sourceCode" id="cb10"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="fu">swirl</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb11"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="fu">swirl</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p>This time, <strong>everything will work correctly</strong>.</p>
 </section>
 <section id="step-6-download-course-materials" class="level2">

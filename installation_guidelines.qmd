@@ -31,6 +31,12 @@ Open RStudio (or just plain R if you don't have RStudio) and type the following 
 
 Note that the `>` symbol at the beginning of the line is R's prompt for you type something into the console. We include it here so you know that this command is to be typed into the console and not elsewhere. The part you type begins after `>`.
 
+After installing, load the `swirl` package by typing:
+
+``` r
+library(swirl)
+```
+
 You will see:
 
 ``` text
@@ -85,9 +91,9 @@ Enter your *real* lastname.firstname.
 For example:
 
 ``` text
-dupont.jeanpaul
-zidane.zinedine
-demedicis.catherine
+mbappe.kylian
+dupont.jeanjacques
+bardot.brigitte
 halliday.johnny
 ...
 ```

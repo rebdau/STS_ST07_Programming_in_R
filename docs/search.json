@@ -109,7 +109,7 @@
     "href": "installation_guidelines.html#step-3-install-swirl",
     "title": "Installation Guidelines",
     "section": "Step 3: Install swirl",
-    "text": "Step 3: Install swirl\nYou only need to do this once.\nOpen RStudio (or just plain R if you don’t have RStudio) and type the following into the console:\n&gt; install.packages(\"swirl\")\nNote that the &gt; symbol at the beginning of the line is R’s prompt for you type something into the console. We include it here so you know that this command is to be typed into the console and not elsewhere. The part you type begins after &gt;.\nYou will see:\n| Hi! Type swirl() when you are ready to begin.\n\nIf you haven’t installed the lessons from my GitHub page on your computer, you aren’t ready to begin yet!\nDo not type swirl() until the lessons are installed."
+    "text": "Step 3: Install swirl\nYou only need to do this once.\nOpen RStudio (or just plain R if you don’t have RStudio) and type the following into the console:\n&gt; install.packages(\"swirl\")\nNote that the &gt; symbol at the beginning of the line is R’s prompt for you type something into the console. We include it here so you know that this command is to be typed into the console and not elsewhere. The part you type begins after &gt;.\nAfter installing, load the swirl package by typing:\nlibrary(swirl)\nYou will see:\n| Hi! Type swirl() when you are ready to begin.\n\nIf you haven’t installed the lessons from my GitHub page on your computer, you aren’t ready to begin yet!\nDo not type swirl() until the lessons are installed."
   },
   {
     "objectID": "installation_guidelines.html#step-4-install-the-swirl-lessons-important",
@@ -123,7 +123,7 @@
     "href": "installation_guidelines.html#step-5-enter-your-name-to-swirl",
     "title": "Installation Guidelines",
     "section": "Step 5: Enter your name to swirl",
-    "text": "Step 5: Enter your name to swirl\nOnce the lessons are installed, start swirl:\n\nswirl()\n\nYou will be asked to choose a name:\nWelcome to swirl!\nPlease sign in.\nIf you've been here before, use the same name as you did then.\nIf you are new, call yourself something unique.\nWhat shall I call you?\nEnter your real lastname.firstname.\nFor example:\ndupont.jeanpaul\nzidane.zinedine\ndemedicis.catherine\nhalliday.johnny\n...\n\nImportant: Write down the name you entered so you can remember it.\nIt is essential that you use the same name every time you do swirl() lessons throughout the course.\n\n\nYou are now ready to begin the course (go to swirl_guidelines)."
+    "text": "Step 5: Enter your name to swirl\nOnce the lessons are installed, start swirl:\n\nswirl()\n\nYou will be asked to choose a name:\nWelcome to swirl!\nPlease sign in.\nIf you've been here before, use the same name as you did then.\nIf you are new, call yourself something unique.\nWhat shall I call you?\nEnter your real lastname.firstname.\nFor example:\nmbappe.kylian\ndupont.jeanjacques\nbardot.brigitte\nhalliday.johnny\n...\n\nImportant: Write down the name you entered so you can remember it.\nIt is essential that you use the same name every time you do swirl() lessons throughout the course.\n\n\nYou are now ready to begin the course (go to swirl_guidelines)."
   },
   {
     "objectID": "installation_guidelines.html#common-mistake-what-not-to-do",
@@ -138,5 +138,12 @@
     "title": "Installation Guidelines",
     "section": "Do it correctly:",
     "text": "Do it correctly:\nAfter exiting swirl():\n1. Install the lessons:\ninstall_course_github(\"rebdau\", \"STS_ST07_swirl\")\n2. Start swirl again:\nswirl()\nThis time, everything will work correctly."
+  },
+  {
+    "objectID": "installation_guidelines.html#step-6-download-course-materials",
+    "href": "installation_guidelines.html#step-6-download-course-materials",
+    "title": "Installation Guidelines",
+    "section": "Step 6: Download course materials",
+    "text": "Step 6: Download course materials\nBefore starting the lessons, you need to download the course materials.\nThese materials include:\n\nThe data/ folder with datasets\n\nThe scripts/ folder with R scripts\n\nYou can download the ZIP file from GitHub here:\nDownload course materials\n\nImportant: After downloading, do not rename or move the folders inside the ZIP.\nKeep the folder structure intact so the lessons work correctly."
   }
 ]
