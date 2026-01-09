@@ -4,5 +4,7 @@
 *.RData
 .DS_Store
 Thumbs.db
+*.Rproj
+personal/
 
 /.quarto/

@@ -36,20 +36,22 @@ To earn credit for this course, you must meet **all** of the following requireme
 ## The order of the swirl lessons and assignments to be completed is the following
 
 1.  Basic Building Blocks\
-2.  Workspace, Directories, and Files\
-3.  Exercise 1\
-4.  Data Classes\
-5.  Logic\
-6.  Sequences of Numbers\
-7.  Subsetting Vectors\
-8.  Matrices and Data Frames\
-9.  Exercise 2\
-10. Exercise 3\
-11. Lists\
-12. Lists: Examples\
-13. lapply() and sapply()\
-14. vapply() and tapply()\
-15. Functions\
-16. Exercise 4
+2.  <span style="color:red;">Exercise 1\
+3.  Workspace, Directories, and Files\
+4.  <span style="color:red;">Exercise 2\
+5.  Data Classes\
+6.  Logic\
+7.  Sequences of Numbers\
+8.  Subsetting Vectors\
+9.  Matrices and Data Frames\
+10. <span style="color:red;">Exercise 3\
+11. <span style="color:red;">Exercise 4\
+12. Lists\
+13. Lists: Examples\
+14. lapply() and sapply()\
+15. vapply() and tapply()\
+16. Functions\
+17. <span style="color:red;">Exercise 5\
+18. <span style="color:red;">Exercise 6
 
 Extra exercises can be provided on demand.

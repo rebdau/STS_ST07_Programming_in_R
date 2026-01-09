@@ -81,7 +81,7 @@
     "href": "index.html#the-order-of-the-swirl-lessons-and-assignments-to-be-completed-is-the-following",
     "title": "Course Home",
     "section": "The order of the swirl lessons and assignments to be completed is the following",
-    "text": "The order of the swirl lessons and assignments to be completed is the following\n\nBasic Building Blocks\n\nWorkspace, Directories, and Files\n\nExercise 1\n\nData Classes\n\nLogic\n\nSequences of Numbers\n\nSubsetting Vectors\n\nMatrices and Data Frames\n\nExercise 2\n\nExercise 3\n\nLists\n\nLists: Examples\n\nlapply() and sapply()\n\nvapply() and tapply()\n\nFunctions\n\nExercise 4\n\nExtra exercises can be provided on demand."
+    "text": "The order of the swirl lessons and assignments to be completed is the following\n\nBasic Building Blocks\n\nExercise 1\n\nWorkspace, Directories, and Files\n\nExercise 2\n\nData Classes\n\nLogic\n\nSequences of Numbers\n\nSubsetting Vectors\n\nMatrices and Data Frames\n\nExercise 3\n\nExercise 4\n\nLists\n\nLists: Examples\n\nlapply() and sapply()\n\nvapply() and tapply()\n\nFunctions\n\nExercise 5\n\nExercise 6\n\nExtra exercises can be provided on demand."
   },
   {
     "objectID": "installation_guidelines.html",
