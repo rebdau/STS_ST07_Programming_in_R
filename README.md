@@ -1,15 +1,16 @@
 # STS_ST07
-STS ST07 "Programmation en R" - An introduction to R, taught to graduate students subscribed at the Science and Health Graduate school of Université de Picardie Jules Verne (UPJV), Amiens, France. This course covers basic material, adapted from the Swirl Course Network.
-The course consists of Swirl lessons, alternated with exercises.
+STS ST07 "Programmation en R" - An introductory R programming course for PhD students from the A2U alliance (Université d'Artois, Université de Picardie Jules Verne and Université du Littoral Côte d'Opale). 
+The course focuses on developing fundamental programming skills in R, including data structures, data manipulation, logical operations, iteration and writing functions. It aims to provide students with the programming foundations needed to write their own R scripts and process scientific data independently.
+The course combines interactive **Swirl lessons** with practical **exercises** designed to reinforce understanding and develop independent programming skills.
 
 Swirl lessons
 =============
-Lessons are short (20–30 minute) scripts that run in the R console that each student works through independently.
-These lessons will walk through R commands and ideas, providing direct real-time feedback as the student writes code in the R console.
+Swirl lessons are short (20–30 minute), interactive tutorials that students complete independently in the R console. They introduce R programming concepts and commands step by step, providing immediate feedback as students write and execute code. 
+These lessons walk through R commands and ideas, requiring students to write and execute R code, and providing direct real-time feedback.
 
 Exercises
 =========
-The exercises will repeat much of the material of the swirl lessons, but with new data and without the feedback from SWIRL. The exercises will reinforce the material adressed in Swirl lessons, and develop understanding and coding skills.
+The exercises consist of larger, real-world-inspired assignments in which students apply and combine the programming skills acquired throughout the course. Unlike the guided Swirl lessons, these assignments require students to work more independently, developing their problem-solving abilities and gaining practical experience in writing R scripts.
 
 
 Order of lessons and exercises
